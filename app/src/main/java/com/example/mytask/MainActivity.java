@@ -9,14 +9,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView restaurantRc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Restaurants");
-        restaurantRc = findViewById(R.id.restaurant_rc);
 
     }
 
