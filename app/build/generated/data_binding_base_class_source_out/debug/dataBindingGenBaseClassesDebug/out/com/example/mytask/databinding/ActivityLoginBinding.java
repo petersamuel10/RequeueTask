@@ -8,11 +8,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatEditText;
-import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.mytask.R;
-import com.example.mytask.authentication.Login;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.Deprecated;
@@ -37,9 +35,6 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   @NonNull
   public final TextInputLayout passwordLayout;
 
-  @Bindable
-  protected Login mLoginActivity;
-
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppCompatEditText emailEd, TextInputLayout emailLayout, TextView errorTxt,
       MaterialButton loginBtn, AppCompatEditText passwordEd, TextInputLayout passwordLayout) {
@@ -50,13 +45,6 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
     this.loginBtn = loginBtn;
     this.passwordEd = passwordEd;
     this.passwordLayout = passwordLayout;
-  }
-
-  public abstract void setLoginActivity(@Nullable Login loginActivity);
-
-  @Nullable
-  public Login getLoginActivity() {
-    return mLoginActivity;
   }
 
   @NonNull

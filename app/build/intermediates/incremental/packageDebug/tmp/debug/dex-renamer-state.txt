@@ -1,4 +1,4 @@
-#Sun Feb 02 01:38:57 AST 2020
+#Sun Feb 02 01:45:56 AST 2020
 base.0=C\:\\Users\\jesus\\Desktop\\Mytask\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

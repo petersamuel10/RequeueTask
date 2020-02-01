@@ -51,7 +51,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x1L;
         }
         requestRebind();
     }
@@ -69,17 +69,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.loginActivity == variableId) {
-            setLoginActivity((com.example.mytask.authentication.Login) variable);
-        }
-        else {
-            variableSet = false;
-        }
             return variableSet;
-    }
-
-    public void setLoginActivity(@Nullable com.example.mytask.authentication.Login LoginActivity) {
-        this.mLoginActivity = LoginActivity;
     }
 
     @Override
@@ -103,8 +93,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): loginActivity
-        flag 1 (0x2L): null
+        flag 0 (0x1L): null
     flag mapping end*/
     //end
 }

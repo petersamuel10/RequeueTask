@@ -3,9 +3,7 @@ package androidx.databinding.library.baseAdapters;
 public class BR {
   public static final int _all = 0;
 
-  public static final int loginActivity = 1;
+  public static final int categories = 1;
 
-  public static final int categories = 2;
-
-  public static final int category = 3;
+  public static final int category = 2;
 }
