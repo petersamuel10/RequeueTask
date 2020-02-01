@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -22,16 +22,16 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final RecyclerView categoryRc;
 
   @NonNull
-  public final ConstraintLayout profileLayout;
+  public final Toolbar myToolbar;
 
   @Bindable
   protected List<Category> mCategories;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView categoryRc, ConstraintLayout profileLayout) {
+      RecyclerView categoryRc, Toolbar myToolbar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.categoryRc = categoryRc;
-    this.profileLayout = profileLayout;
+    this.myToolbar = myToolbar;
   }
 
   public abstract void setCategories(@Nullable List<Category> categories);

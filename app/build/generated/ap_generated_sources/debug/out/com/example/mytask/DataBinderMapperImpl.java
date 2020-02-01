@@ -7,7 +7,7 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.mytask.databinding.ActivityMainBindingImpl;
-import com.example.mytask.databinding.ItemCardBindingImpl;
+import com.example.mytask.databinding.ItemCategoryBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -21,13 +21,13 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYMAIN = 1;
 
-  private static final int LAYOUT_ITEMCARD = 2;
+  private static final int LAYOUT_ITEMCATEGORY = 2;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mytask.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mytask.R.layout.item_card, LAYOUT_ITEMCARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mytask.R.layout.item_category, LAYOUT_ITEMCATEGORY);
   }
 
   @Override
@@ -45,11 +45,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
         }
-        case  LAYOUT_ITEMCARD: {
-          if ("layout/item_card_0".equals(tag)) {
-            return new ItemCardBindingImpl(component, view);
+        case  LAYOUT_ITEMCATEGORY: {
+          if ("layout/item_category_0".equals(tag)) {
+            return new ItemCategoryBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for item_card is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for item_category is invalid. Received: " + tag);
         }
       }
     }
@@ -110,7 +110,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
     static {
       sKeys.put("layout/activity_main_0", com.example.mytask.R.layout.activity_main);
-      sKeys.put("layout/item_card_0", com.example.mytask.R.layout.item_card);
+      sKeys.put("layout/item_category_0", com.example.mytask.R.layout.item_category);
     }
   }
 }

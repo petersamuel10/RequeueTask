@@ -955,7 +955,6 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
-color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1396,7 +1395,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable constrain_layout_background
+drawable corner_white_background
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1406,9 +1405,7 @@ drawable design_snackbar_background
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
-drawable ic_exit
 drawable ic_filter
-drawable ic_home
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_foreground
@@ -1418,7 +1415,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_products
 drawable ic_search
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1522,7 +1518,9 @@ id bottom
 id buttonPanel
 id cancel_button
 id category_image
+id category_name
 id category_rc
+id category_type
 id center
 id center_horizontal
 id center_vertical
@@ -1562,8 +1560,8 @@ id direct
 id disableHome
 id dropdown_menu
 id edit_query
-id email
 id email_ed
+id email_layout
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1605,7 +1603,6 @@ id line3
 id listMode
 id list_item
 id login_btn
-id logout
 id masked
 id message
 id middle
@@ -1637,7 +1634,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
-id name
+id my_toolbar
 id navigation_header_container
 id never
 id noScroll
@@ -1656,14 +1653,12 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id password
 id password_ed
+id password_layout
 id password_toggle
 id peekHeight
 id percent
 id pin
-id products
-id profile_layout
 id progress_circular
 id progress_horizontal
 id radio
@@ -1694,6 +1689,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id shadow
 id shortcut
 id showCustom
 id showHome
@@ -1755,13 +1751,11 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id type
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
-id view3
 id view_offset_helper
 id visible
 id withText
@@ -1846,7 +1840,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout item_card
+layout item_category
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1898,7 +1892,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu drawer_menu
 menu tool_bar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1938,12 +1931,14 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string email
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string login
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -1978,11 +1973,13 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string restaurant
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
@@ -2208,7 +2205,8 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
-style LoginTheme
+style HeaderBar
+style LoginThem
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2219,7 +2217,6 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
-style MyActionBar
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -2488,7 +2485,6 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
-style TitleBarTextColor
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

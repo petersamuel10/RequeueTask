@@ -14,7 +14,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.profile_layout, 2);
+        sViewsWithIds.put(R.id.my_toolbar, 2);
     }
     // views
     @NonNull
@@ -30,7 +30,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (androidx.recyclerview.widget.RecyclerView) bindings[1]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[2]
+            , (androidx.appcompat.widget.Toolbar) bindings[2]
             );
         this.categoryRc.setTag(null);
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
@@ -101,7 +101,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            com.example.mytask.mainPage.HomeBindingAdapter.setCategoryList(this.categoryRc, categories);
+            com.example.mytask.mainPage.adapter.HomeBindingAdapter.setCategoryList(this.categoryRc, categories);
         }
     }
     // Listener Stub Implementations

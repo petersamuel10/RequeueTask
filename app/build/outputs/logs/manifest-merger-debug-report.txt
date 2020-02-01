@@ -88,12 +88,12 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\jesus\.gradle
 		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:14:9-40
 	android:networkSecurityConfig
 		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:11:9-69
-activity#com.example.mytask.Auth.Login
+activity#com.example.mytask.authentication.Login
 ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:theme
-		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:17:13-46
+		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:17:13-45
 	android:name
-		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:16:13-39
+		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:16:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN

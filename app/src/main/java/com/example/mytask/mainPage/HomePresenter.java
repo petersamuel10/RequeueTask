@@ -14,9 +14,10 @@ import retrofit2.Response;
 
 class HomePresenter extends BasePresenter<HomeView> {
 
-    void getCategoryList(Level level) {
+    void getCategoryList() {
         getView().showProgress();
 
+        Level level = new Level(0);
         APIManager.getInstance().getAPI().categoryList(level)
                 .enqueue(new Callback<HashMap<String, List<Category>>>() {
                     @Override

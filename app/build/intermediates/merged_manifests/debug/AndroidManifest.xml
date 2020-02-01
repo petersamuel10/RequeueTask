@@ -22,8 +22,8 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.mytask.Auth.Login"
-            android:theme="@style/LoginTheme" >
+            android:name="com.example.mytask.authentication.Login"
+            android:theme="@style/LoginThem" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
