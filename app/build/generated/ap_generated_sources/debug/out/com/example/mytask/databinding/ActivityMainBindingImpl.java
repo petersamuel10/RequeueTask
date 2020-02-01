@@ -101,7 +101,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            com.example.mytask.mainPage.adapter.HomeBindingAdapter.setCategoryList(this.categoryRc, categories);
+            com.example.mytask.homePage.adapter.HomeBindingAdapter.setCategoryList(this.categoryRc, categories);
         }
     }
     // Listener Stub Implementations

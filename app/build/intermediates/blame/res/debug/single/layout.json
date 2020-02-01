@@ -4,6 +4,10 @@
         "source": "C:\\Users\\jesus\\Desktop\\Mytask\\app\\src\\main\\res\\layout\\item_card.xml"
     },
     {
+        "merged": "C:\\Users\\jesus\\Desktop\\Mytask\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\jesus\\Desktop\\Mytask\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
         "merged": "C:\\Users\\jesus\\Desktop\\Mytask\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Users\\jesus\\Desktop\\Mytask\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

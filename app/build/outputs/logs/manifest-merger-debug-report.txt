@@ -104,7 +104,7 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
 		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:21:27-74
-activity#com.example.mytask.mainPage.MainActivity
+activity#com.example.mytask.homePage.MainActivity
 ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:24:9-25:52
 	android:name
 		ADDED from C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:25:13-50

@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".mainPage.MainActivity"/>
+            android:name=".homePage.MainActivity"/>
     </application>
 
 </manifest>

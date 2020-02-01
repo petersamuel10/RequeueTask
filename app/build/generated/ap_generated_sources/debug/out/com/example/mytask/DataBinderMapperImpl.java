@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.example.mytask.databinding.ActivityLoginBindingImpl;
 import com.example.mytask.databinding.ActivityMainBindingImpl;
 import com.example.mytask.databinding.ItemCategoryBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -19,13 +20,16 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYMAIN = 1;
+  private static final int LAYOUT_ACTIVITYLOGIN = 1;
 
-  private static final int LAYOUT_ITEMCATEGORY = 2;
+  private static final int LAYOUT_ACTIVITYMAIN = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_ITEMCATEGORY = 3;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mytask.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mytask.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mytask.R.layout.item_category, LAYOUT_ITEMCATEGORY);
   }
@@ -39,6 +43,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYLOGIN: {
+          if ("layout/activity_login_0".equals(tag)) {
+            return new ActivityLoginBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYMAIN: {
           if ("layout/activity_main_0".equals(tag)) {
             return new ActivityMainBindingImpl(component, view);
@@ -96,19 +106,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(4);
+    static final SparseArray<String> sKeys = new SparseArray<String>(5);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "categories");
-      sKeys.put(2, "category");
+      sKeys.put(1, "loginActivity");
+      sKeys.put(2, "categories");
+      sKeys.put(3, "category");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
 
     static {
+      sKeys.put("layout/activity_login_0", com.example.mytask.R.layout.activity_login);
       sKeys.put("layout/activity_main_0", com.example.mytask.R.layout.activity_main);
       sKeys.put("layout/item_category_0", com.example.mytask.R.layout.item_category);
     }

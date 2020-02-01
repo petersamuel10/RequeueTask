@@ -1565,6 +1565,7 @@ id email_layout
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id error_txt
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
