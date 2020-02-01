@@ -3,22 +3,22 @@ package com.example.mytask;
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mytask.model.Restaurant;
+import com.example.mytask.model.Category;
 
 import java.util.List;
 
 public class HomeBindingAdapter {
 
-    @BindingAdapter("restaurantList")
-    public static void setRestaurantList(RecyclerView restaurantRc, List<Restaurant> restaurantList) {
+    @BindingAdapter("categoryList")
+    public static void setCategoryList(RecyclerView categoryRc, List<Category> categoryList) {
 
-        if (restaurantList == null)
+        if (categoryList == null)
             return;
 
-        RestaurantAdapter adapter = (RestaurantAdapter) restaurantRc.getAdapter();
+        RestaurantAdapter adapter = (RestaurantAdapter) categoryRc.getAdapter();
         if (adapter == null) {
-            adapter = new RestaurantAdapter(restaurantList);
-            restaurantRc.setAdapter(adapter);
+            adapter = new RestaurantAdapter(categoryList);
+            categoryRc.setAdapter(adapter);
         }
     }
 }

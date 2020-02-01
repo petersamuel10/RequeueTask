@@ -1,5 +1,8 @@
 package com.example.mytask;
 
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -7,22 +10,25 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.mytask.databinding.ItemCardBinding;
-import com.example.mytask.model.Restaurant;
+import com.example.mytask.model.Category;
 
 import java.util.List;
 
 public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolder> {
 
-    private List<Restaurant> restaurantList;
+    private List<Category> restaurantList;
+    private Context context;
 
-    RestaurantAdapter(List<Restaurant> restaurantList) {
+    RestaurantAdapter(List<Category> restaurantList) {
         this.restaurantList = restaurantList;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        context = parent.getContext();
         ItemCardBinding itemCardBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()),
                 R.layout.item_card, parent, false);
         return new ViewHolder(itemCardBinding);
@@ -31,7 +37,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.itemCardBinding.setRestaurant(restaurantList.get(position));
+        holder.itemCardBinding.setCategory(restaurantList.get(position));
     }
 
     @Override

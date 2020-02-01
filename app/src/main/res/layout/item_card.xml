@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout >
 
     <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="350dp"
         android:layout_margin="8dp"
         android:elevation="4dp"
         android:orientation="vertical"
@@ -22,7 +23,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:photo="@{restaurant.image}" />
+                app:photo="@{category.category_icon}" />
 
             <View
                 android:id="@+id/view3"
@@ -39,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@{restaurant.name}"
+                android:text="@{category.category_title_en}"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -52,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@{restaurant.name}"
+                android:text="@{category.category_title_en}"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -63,9 +64,8 @@
     </androidx.cardview.widget.CardView>
 
     <data>
-
         <variable
-            name="restaurant"
-            type="com.example.mytask.model.Restaurant" />
+            name="category"
+            type="com.example.mytask.model.Category" />
     </data>
 </layout>

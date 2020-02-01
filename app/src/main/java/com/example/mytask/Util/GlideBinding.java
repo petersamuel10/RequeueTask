@@ -1,6 +1,7 @@
 package com.example.mytask.Util;
 
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.widget.ImageView;
 
 import androidx.databinding.BindingAdapter;
@@ -13,8 +14,8 @@ public class GlideBinding {
     @BindingAdapter("photo")
     public static void loadImage(ImageView imageView, String imageUrl) {
         Glide.with(imageView.getContext())
-                .load(imageUrl)
-                .placeholder(Color.WHITE)
+                .load("https://assets.villa-vanillaa.com"+imageUrl)
+                .placeholder(new ColorDrawable(Color.parseColor("#f6f6f6")))
                 .into(imageView);
     }
 }

@@ -20,24 +20,21 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/restaurant_rc"
-                restaurantList="@{restaurants}"
+                android:id="@+id/category_rc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:categoryList="@{categories}"
+                android:paddingTop="8dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <data>
-
         <import type="java.util.List" />
-
-        <import type="com.example.mytask.model.Restaurant" />
-
+        <import type="com.example.mytask.model.Category" />
         <variable
-            name="restaurants"
-            type="List&lt;Restaurant>" />
+            name="categories"
+            type="List&lt;Category>" />
     </data>
 </layout>
