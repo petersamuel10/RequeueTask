@@ -1,4 +1,4 @@
-package com.example.mytask;
+package com.example.mytask.mainPage;
 
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.RecyclerView;

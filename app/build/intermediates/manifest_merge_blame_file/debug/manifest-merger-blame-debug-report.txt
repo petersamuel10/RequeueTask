@@ -15,7 +15,7 @@
 11-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:7:5-25:19
+13-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:7:5-26:19
 14        android:allowBackup="true"
 14-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -35,26 +35,25 @@
 23        android:theme="@style/AppTheme" >
 23-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:14:9-40
 24        <activity
-24-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:15:9-22:20
+24-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:15:9-23:20
 25            android:name="com.example.mytask.Auth.Login"
-25-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:15:19-45
+25-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:16:13-39
 26            android:theme="@style/LoginTheme" >
-26-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:16:13-46
+26-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:17:13-46
 27            <intent-filter>
-27-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:17:13-21:29
+27-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:18:13-22:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:18:17-69
-28-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:18:25-66
+28-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:19:17-69
+28-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:19:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:20:17-77
-30-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:20:27-74
+30-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:21:17-77
+30-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:21:27-74
 31            </intent-filter>
 32        </activity>
-33        <activity android:name="com.example.mytask.MainActivity" >
-33-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:23:9-24:20
-33-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:23:19-47
-34        </activity>
-35    </application>
-36
-37</manifest>
+33        <activity android:name="com.example.mytask.mainPage.MainActivity" />
+33-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:24:9-25:52
+33-->C:\Users\jesus\Desktop\Mytask\app\src\main\AndroidManifest.xml:25:13-50
+34    </application>
+35
+36</manifest>

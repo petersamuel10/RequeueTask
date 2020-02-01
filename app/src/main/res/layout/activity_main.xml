@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/purple_gradient"
-        tools:context=".MainActivity">
+        tools:context=".mainPage.MainActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/profile_layout"
@@ -15,6 +15,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/constrain_layout_background"
             android:elevation="8dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">

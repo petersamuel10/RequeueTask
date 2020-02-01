@@ -30,8 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.mytask.MainActivity" >
-        </activity>
+        <activity android:name="com.example.mytask.mainPage.MainActivity" />
     </application>
 
 </manifest>

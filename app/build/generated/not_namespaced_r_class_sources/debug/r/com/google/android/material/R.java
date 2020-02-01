@@ -1786,22 +1786,22 @@ public final class R {
         public static final int notification_template_icon_group = 0x7f0b004e;
         public static final int notification_template_part_chronometer = 0x7f0b004f;
         public static final int notification_template_part_time = 0x7f0b0050;
-        public static final int select_dialog_item_material = 0x7f0b0051;
-        public static final int select_dialog_multichoice_material = 0x7f0b0052;
-        public static final int select_dialog_singlechoice_material = 0x7f0b0053;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b0054;
-        public static final int test_action_chip = 0x7f0b0055;
-        public static final int test_design_checkbox = 0x7f0b0056;
-        public static final int test_reflow_chipgroup = 0x7f0b0057;
-        public static final int test_toolbar = 0x7f0b0058;
-        public static final int test_toolbar_custom_background = 0x7f0b0059;
-        public static final int test_toolbar_elevation = 0x7f0b005a;
-        public static final int test_toolbar_surface = 0x7f0b005b;
-        public static final int text_view_with_line_height_from_appearance = 0x7f0b005c;
-        public static final int text_view_with_line_height_from_layout = 0x7f0b005d;
-        public static final int text_view_with_line_height_from_style = 0x7f0b005e;
-        public static final int text_view_with_theme_line_height = 0x7f0b005f;
-        public static final int text_view_without_line_height = 0x7f0b0060;
+        public static final int select_dialog_item_material = 0x7f0b0052;
+        public static final int select_dialog_multichoice_material = 0x7f0b0053;
+        public static final int select_dialog_singlechoice_material = 0x7f0b0054;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b0055;
+        public static final int test_action_chip = 0x7f0b0056;
+        public static final int test_design_checkbox = 0x7f0b0057;
+        public static final int test_reflow_chipgroup = 0x7f0b0058;
+        public static final int test_toolbar = 0x7f0b0059;
+        public static final int test_toolbar_custom_background = 0x7f0b005a;
+        public static final int test_toolbar_elevation = 0x7f0b005b;
+        public static final int test_toolbar_surface = 0x7f0b005c;
+        public static final int text_view_with_line_height_from_appearance = 0x7f0b005d;
+        public static final int text_view_with_line_height_from_layout = 0x7f0b005e;
+        public static final int text_view_with_line_height_from_style = 0x7f0b005f;
+        public static final int text_view_with_theme_line_height = 0x7f0b0060;
+        public static final int text_view_without_line_height = 0x7f0b0061;
     }
     public static final class plurals {
         private plurals() {}
